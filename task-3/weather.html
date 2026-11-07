@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather Lookup | Task 3</title>
+  <link rel="stylesheet" href="css/task-3.css">
+  <script src="js/weather.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="site-title">Task 3: Advanced Styling and JavaScript</p>
+      <nav class="site-nav" aria-label="Task 3 pages">
+        <ul>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="weather.html" aria-current="page">Weather</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="intro" aria-labelledby="weather-title">
+      <h1 id="weather-title">Current Weather</h1>
+      <p>Enter a city to see its current temperature, wind speed and conditions.</p>
+    </section>
+
+    <section class="card">
+      <form id="weather-form" class="weather-form">
+        <label for="city-input">City name</label>
+        <input id="city-input" name="city" type="text" autocomplete="address-level2">
+        <button class="primary-button" type="submit">Get weather</button>
+      </form>
+      <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+      <div id="weather-result" class="weather-result" aria-live="polite"></div>
+    </section>
+  </main>
+</body>
+</html>

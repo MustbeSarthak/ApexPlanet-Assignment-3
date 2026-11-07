@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Web Development Quiz | Task 3</title>
+  <link rel="stylesheet" href="css/task-3.css">
+  <script src="js/quiz.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="site-title">Task 3: Advanced Styling and JavaScript</p>
+      <nav class="site-nav" aria-label="Task 3 pages">
+        <ul>
+          <li><a href="quiz.html" aria-current="page">Quiz</a></li>
+          <li><a href="weather.html">Weather</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="intro" aria-labelledby="quiz-title">
+      <h1 id="quiz-title">Web Development Quiz</h1>
+      <p>Test your knowledge of HTML, CSS and JavaScript.</p>
+    </section>
+
+    <section class="card" aria-live="polite">
+      <div id="quiz-view">
+        <p id="progress" class="progress"></p>
+        <h2 id="question" class="question"></h2>
+        <ul id="answers" class="answer-list"></ul>
+        <p id="feedback" class="feedback" aria-live="assertive"></p>
+        <button id="next-button" class="primary-button hidden" type="button">Next</button>
+      </div>
+      <div id="result-view" class="hidden">
+        <h2>Quiz complete!</h2>
+        <p id="score" class="score"></p>
+        <p id="score-message"></p>
+        <button id="restart-button" class="secondary-button" type="button">Restart</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
